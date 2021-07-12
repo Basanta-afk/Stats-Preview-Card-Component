@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Stats preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        *::after,
+        *::before {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: hsl(244, 61%, 10%);
+            color: hsla(0, 0%, 100%, 0.75);
+            min-height: 90vh;
+        }
+        
+        main {
+            min-width: 600px;
+            display: flex;
+            z-index: 1;
+            margin: 1em;
+        }
+        
+        section {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            background: hsl(226, 40%, 22%);
+            border-radius: 50px 0px 0px 10px;
+            padding: 30px 55px;
+        }
+        
+        section h1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 700;
+            font-size: 2.25rem;
+            color: navajowhite;
+        }
+        
+        section h1 span {
+            color: indianred;
+        }
+        
+        section ul {
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            letter-spacing: 1px;
+            color: navajowhite;
+            margin-left: -40px;
+        }
+        
+        section ul p {
+            text-transform: uppercase;
+            font-size: 0.75rem;
+        }
+        
+        section info {
+            color: oldlace;
+            line-height: 1.5em
+        }
+        
+        .bg-img {
+            min-height: 10em;
+            width: 400px;
+            min-width: 200px;
+            background: url(images/image-header-desktop.jpg)rgba(253, 86, 183, 0.3);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 0 10px 50px 0;
+            overflow: hidden;
+            background-blend-mode: screen;
+        }
+        
+        .attribution {
+            position: absolute;
+            bottom: 0;
+            font-size: 0.75rem;
+            line-height: 20px;
+            text-align: center;
+            color: whitesmoke;
+            margin-bottom: 10px;
+        }
+        
+        .attribution a {
+            text-decoration: none;
+            color: whitesmoke;
+            font-weight: bold;
+        }
+        
+        .attribution a:hover {
+            color: violet;
+        }
+        
+        @media only screen and (max-width: 1024px) {
+            .section {
+                padding: 3em 4.5em 3em 3em;
+            }
+        }
+        
+        @media only screen and (max-width:625px) {
+            body {
+                flex-direction: column;
+            }
+            .main {
+                flex-direction: column-reverse;
+                min-width: 200px;
+                margin: 10px;
+                margin-top: 5em;
+            }
+            .section {
+                padding: 0;
+                width: 300px;
+                border-radius: 00px 0px 20px 20px;
+            }
+            .section h1,
+            .info {
+                text-align: center;
+            }
+            .section .info {
+                font-size: 1.1rem;
+                margin-bottom: 2em;
+                line-height: 1.75em;
+            }
+            .section ul {
+                flex-direction: column;
+            }
+            .section ul li {
+                margin-bottom: 2em;
+                text-align: center;
+            }
+            .section ul h2 {
+                font-size: 2rem;
+                text-align: center;
+                margin-bottom: 0.25em;
+            }
+            .section ul p {
+                font-size: 1.05rem;
+            }
+            .bg-img {
+                height: 220px;
+                width: 300px;
+                border-radius: 20px 20px 0 0;
+                background: url(images/image-header-mobile.jpg) no-repeat;
+                background-size: contain;
+            }
+            .attribution {
+                position: relative;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1>Get <span> insights</span> that help your business grow.</h1>
+            <div class="content">
+                <p class="info">
+                    Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.
+                </p>
+                <ul>
+                    <li>
+                        <h2> 10k+</h2>
+                        <p>companies</p>
+                    </li>
+                    <li>
+                        <h2>314</h2>
+                        <p>templates</p>
+                    </li>
+                    <li>
+                        <h2>12M+</h2>
+                        <p>queries</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="bg-img">
+        </div>
+    </main>
+    <footer class="attribution">
+        <p>
+            Challenge by
+            <a href="https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62">Frontend Mentor</a
+        >
+      </p>
+      <p>
+        Coded by
+        <a href="https://twitter.com/BhusanKhadka">Basanta Bhusan khadka</a>.
+        </p>
+    </footer>
+</body>
+
+</html>
